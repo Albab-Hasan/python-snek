@@ -1,2 +1,20 @@
 # python-snek
-Python like interpreter in C 
+Python like interpreter in C
+
+#TODO
+- Arithmetic Interpreter [in progress]
+
+    - Parser - Handle integer literals and binary expressions []
+
+    - AST - Represent integer and binary operator nodes [done]
+
+    - Evaluation - Recursively evaluate AST []
+
+    - Handle parentheses and operator precedence []
+
+# Goals:
+- [] basic REPL
+- [] variable assignment
+- [] arithmetic operations
+- [] function calls
+- [] basic exception handling
