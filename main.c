@@ -28,3 +28,35 @@ typedef struct ASTNode
   };
 } ASTNode;
 
+// parser
+typedef enum
+{
+  TOKEN_INT,
+  TOKEN_PLUS,
+  TOKEN_MINUS,
+  TOKEN_MULTIPLY,
+  TOKEN_DIVIDE,
+  TOKEN_LPAREN,
+  TOKEN_RPAREN,
+  TOKEN_UNKNOWN, // unknown token
+  TOKEN_EOF      // end of file
+} TokenType;
+
+typedef struct
+{
+  TokenType type;
+  int value;   // for integer tokens
+  char *start; // for error reporting
+  int length;
+} Token;
+
+Token current_token;
+const char* input;
+char* current_position;
+
+void next_token(){
+  while (isspace(*current_position)) current_position++;
+
+  current_token.start = current_position;
+  current_token.length = 1;
+}

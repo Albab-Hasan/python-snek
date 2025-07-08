@@ -4,7 +4,7 @@ Python like interpreter in C
 #TODO
 - Arithmetic Interpreter [in progress]
 
-    - Parser - Handle integer literals and binary expressions []
+    - Parser - Handle integer literals and binary expressions [working]
 
     - AST - Represent integer and binary operator nodes [done]
 
