@@ -1,5 +1,5 @@
 # python-snek
-Python like interpreter in C
+Python interpreter in C
 
 #TODO
 - Arithmetic Interpreter [in progress]
